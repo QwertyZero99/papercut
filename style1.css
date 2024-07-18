@@ -4,12 +4,18 @@ body{
   font-size: 12.5px;
   font-family: tahoma, Impact, fantasy;
   font-stretch: ultra-condensed;
+  color: #f2f2f2;
 }
 body, html {
   margin: 0;
   padding: 0;
 }
-
+ div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+} 
 /* Container to center content */
 .container {
   text-align: center; /* Center aligns h1 and .topnav */
