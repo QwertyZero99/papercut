@@ -10,7 +10,7 @@ body, html {
 }
 
 /* Title style */
-h1 {
+.title {
   color: #333; /* Example color */
   font-size: 24px; /* Example font size */
 }
