@@ -1,21 +1,33 @@
-<style>
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container to center content */
+.container {
+  text-align: center; /* Center aligns h1 and .topnav */
+}
+
+/* Title style */
+h1 {
+  color: #333; /* Example color */
+  font-size: 24px; /* Example font size */
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #17153B;
   overflow: hidden;
-  h1 {text-align: center;}
-  p {text-align: center;}
-  div {text-align: center;}
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 14px 16px;
   font-size: 17px;
+  display: inline-block; /* Ensures links are displayed in a row */
 }
 
 /* Change the color of links on hover */
@@ -29,4 +41,3 @@
   background-color: #2E236C;
   color: white;
 }
-</style>
