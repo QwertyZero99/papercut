@@ -11,8 +11,10 @@ body, html {
 
 /* Title style */
 .title {
-  color: #333; /* Example color */
-  font-size: 24px; /* Example font size */
+  color: #f0f8ff; /* Example color */
+  font-size: 27px; /* Example font size */
+  font-family: Impact, fantasy
+  font-stretch: ultra-condensed 
 }
 
 /* Add a black background color to the top navigation */
