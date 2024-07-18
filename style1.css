@@ -3,9 +3,6 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
-  h1 {text-align: center;}
-  p {text-align: center;}
-  div {text-align: center;}
 }
 
 /* Style the links inside the navigation bar */
