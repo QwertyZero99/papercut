@@ -1,5 +1,6 @@
 /* Reset default margin and padding */
 body, html {
+  background-color: #17153B;
   margin: 0;
   padding: 0;
 }
