@@ -1,6 +1,9 @@
 /* Reset default margin and padding */
 body{
   background-color: #17153B;
+  font-size: 12.5px;
+  font-family: tahoma, Impact, fantasy;
+  font-stretch: ultra-condensed;
 }
 body, html {
   margin: 0;
