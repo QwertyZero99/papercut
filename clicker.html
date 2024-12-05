@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+p {
+    color: darkslategray;
+    font-weight: 900;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button {
+            padding: 5px 7px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-color: darkslategray;
+            color: white;
+        }
+
+</style>
+
+</head>
+<body onload="startGame()">
+<script>
+
+var player;
+let score = 0;
+let clickPower = 1;
+let upgradeCost = 5;
+
+function startGame() { //run at beginning
+    //gameCanvas.start();
+}
+
+var gameCanvas = { // set up canvas
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 20);
+        },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function convert(n, suffix = '') {
+    // Suffix array for thousands, millions, billions, etc.
+    let suffixes = ['', 'K', 'M', 'B', 'T'];
+
+    // Base case: if n is less than 1000, return the number with the suffix
+    if (n < 1000) {
+        return n.toFixed(1) + suffix;
+    }
+
+    // Recursive case: divide the number by 1000 and add the next suffix
+    let index = suffix ? suffixes.indexOf(suffix) + 1 : 1;
+    return convert(n / 1000, suffixes[index]);
+}
+
+function updateScore(){
+    if(score < 0){
+        score = 0;
+    }
+    document.getElementById("scoretext").innerHTML = `SCORE: \$${convert(score)}`;
+    document.getElementById("upgradetext").innerHTML = `UPGRADE: \$${convert(clickPower*2)} upgrade for cost of \$${convert(upgradeCost)}`;
+    document.getElementById("clickpowertext").innerHTML = `CLICK POWER: \$${clickPower}`;
+}
+function scoreUp(n) {
+    score += clickPower;
+    updateScore()
+}
+
+function buyUpgrade(){
+    if(score >= clickPower){
+        clickPower *= 2;
+        score -= upgradeCost;
+    }
+    updateScore()
+}
+
+</script>
+<br>
+<div>
+    <p id="scoretext">CLICKS: 0</p>
+    <p id="clickpowertext">CLICK POWER: 1</p>
+    <p id="upgradetext">UPGRADE COST: 0</p>
+    <button onmousedown="scoreUp(1)"> 
+        ■■■■ <br>
+      ■■■■■⬤■■  <br>
+     ■■■CLICK■■■ <br>
+      ■⬤■■⬤■■■ <br>
+        ■■⬤■ <br>
+    </button>
+    <br>
+    <br>
+    <button onmousedown="buyUpgrade()">BUY UPGRADE</button>
+</div>
+
+</body>
+</html>
