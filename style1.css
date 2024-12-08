@@ -59,6 +59,8 @@ body, html {
 }
 
 .pickle{
-  color: green;
+  color: green !important;
+  text-decoration: none;
+
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
