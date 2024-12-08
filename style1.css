@@ -37,7 +37,7 @@ body, html {
 }
 
 /* Style the links inside the navigation bar */
-.topnav.button {
+.topnav a {
   color: #f2f2f2;
   text-decoration: none;
   padding: 14px 16px;
@@ -48,18 +48,18 @@ body, html {
 }
 
 /* Change the color of links on hover */
-.topnav.button:hover {
+.topnav a:hover {
   background-color: #C8ACD6;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav.button.active {
+.topnav a.active {
   background-color: #2E236C;
   color: white;
 }
 
-.topnav.button.active:hover {
+.topnav a.active:active {
   background-color: #3f3096;
   color: white;
 }
