@@ -58,3 +58,8 @@ body, html {
   background-color: #2E236C;
   color: white;
 }
+
+.topnav.button.active:hover {
+  background-color: #3f3096;
+  color: white;
+}
