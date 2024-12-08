@@ -1,0 +1,22 @@
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: greenyellow;
+    text-align: center;
+}
+p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.strikethrough{
+    text-decoration: line-through;
+    color: red;
+}
+.danger{
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 150%;
+}
+
+body {
+    background-image: url(pickletexture.webp);
+}
