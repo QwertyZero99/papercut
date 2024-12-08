@@ -30,7 +30,7 @@ body, html {
 }
 
 /* Add a black background color to the top navigation */
-.topnav {
+.topnav{
   background-color: #17153B;
   overflow: hidden;
 }
@@ -56,11 +56,6 @@ body, html {
 .topnav.button.active {
   background-color: #2E236C;
   color: white;
-}
-
-a {
-  color: aquamarine;
-  font-size: 110%;
 }
 
 .pickle{
