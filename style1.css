@@ -21,6 +21,14 @@ body, html {
   text-align: center; /* Center aligns h1 and .topnav */
 }
 
+a {
+  color: aquamarine;
+  font-size: 110%;
+}
+.pickle{
+  color: green;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
 /* Title style */
 .title {
   color: #f0f8ff; /* Example color */
@@ -28,7 +36,6 @@ body, html {
   font-family: Impact, fantasy;
   font-stretch: ultra-condensed;
 }
-
 
 /* Add a black background color to the top navigation */
 .topnav {
